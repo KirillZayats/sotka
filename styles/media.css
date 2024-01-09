@@ -1,5 +1,168 @@
 :root {
-  --pink: #EC5598;
+  --pink: #ec5598;
   --black: #000;
+  --white: #fff;
   --dark-gray: rgba(0, 0, 0, 0.80);
+  --shadow: rgba(0, 0, 0, 0.08);
+
+  --width-desktop: 1440px;
+  --width-laptop: 1024px;
+  --width-tablet: 768px;
+  --width-mobileL: 425px;
+  --width-mobileM: 360px;
+  --width-mobile: 320px;
 }
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  .article {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .article__title {
+    font-size: 2.8rem;
+  }
+
+  .article__list {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 73px;
+    margin: 40px auto 62px;
+  }
+
+  .list__item--special {
+    grid-row-start: 1;
+  }
+
+  .container-decor {
+    max-width: 198px;
+    margin: -4px auto 0;
+  }
+
+  .list__item img {
+    width: 100%;
+  }
+
+  .section {
+    max-width: 300px;
+    padding: 20px 15px;
+    bottom: -23px;
+  }
+
+  .article__button {
+    width: 240px;
+    height: 60px;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  .section {
+    max-width: 90.9%;
+  }
+}
+
+@media screen and (min-width: 425px) {
+  .article {
+    width: 90%;
+    padding: 0;
+    margin: 55px auto;
+  }
+
+  .article__title {
+    font-size: 3.6rem;
+  }
+
+  .article__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 85px;
+    column-gap: 30px;
+    margin: 65px auto 108px;
+  }
+
+  .section {
+    bottom: -45px;
+  }
+
+  .container-decor {
+    max-width: 278px;
+    margin: 13px auto 0;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .list__item {
+    width: 100%;
+    max-width: 270px;
+  }
+
+  .section {
+    right: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+
+  .article__list {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  .list__item {
+    width: 100%;
+    max-width: 330px;
+  }
+
+  .container-decor {
+    max-width: 220px;
+  }
+
+  .section {
+    max-width: 250px;
+    padding: 10px;
+    bottom: -60px;
+  }
+
+  .article__button {
+    width: 200px;
+    height: 50px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  .article {
+    width: 77.78%;
+  }
+
+  .section {
+    max-width: 300px;
+    padding: 20px 15px;
+    bottom: -45px;
+  }
+
+  .container-decor {
+    max-width: 278px;
+  }
+
+  .article__button {
+    width: 240px;
+    height: 60px;
+  }
+}
+
+
+
